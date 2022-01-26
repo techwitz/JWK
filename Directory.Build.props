@@ -1,0 +1,51 @@
+﻿<Project>
+    <PropertyGroup Label="Package information">
+        <Deterministic>true</Deterministic>
+        <EnablePreviewFeatures>True</EnablePreviewFeatures>
+
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>preview</LangVersion>
+        <NoWarn>$(NoWarn);CS1591;CS0436;CA1014</NoWarn>
+        
+        <SignAssembly>false</SignAssembly>
+        <AssemblyOriginatorKeyFile>..\gcubesigner.snk</AssemblyOriginatorKeyFile>
+
+        <AnalysisLevel>preview</AnalysisLevel>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <ReportAnalyzer>true</ReportAnalyzer>
+        <WarningLevel>3</WarningLevel>
+        
+        <RollForward>LatestMinor</RollForward>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>Ajendra Singh</Authors>
+        <Company>$(Authors)</Company>
+        <Product>JWK (RFC7517)</Product>
+
+        <_Copyright>Copyright © 2022. All rights reserved.</_Copyright>
+
+        <ProductName>JWK (RFC7517)</ProductName>
+        
+        <PackageIconFullPath>$(MSBuildThisFileDirectory)package-icon.png</PackageIconFullPath>
+        <PackageProjectUrl>https://github.com/techwitz/JWK.git</PackageProjectUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageTags>authentication;jwt;openidconnect;openiddict;security</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/techwitz/JWK.git</RepositoryUrl>
+
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishUrl>true</PublishUrl>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <WarnOnPackingNonPackableProject>false</WarnOnPackingNonPackableProject>
+        <CheckEolTargetFramework>true</CheckEolTargetFramework>
+    </PropertyGroup>
+</Project>
